@@ -1,0 +1,25 @@
+Algoritmo promedio
+	Definir contador Como Entero;
+	Definir num Como Entero;
+	Definir prom Como Real;
+	
+	contador<-0;
+	prom<-0;
+	Escribir ("El siguiente algoritmo calcula el promedio de 5 numeros no negativos menores a 10, por  favor ingrese los números de acuerdo a esta condicion.");
+	Mientras contador<5 Hacer
+		Escribir ("Ingrese un número: ")
+		Leer num;
+		
+		Si (num<0) O (num>10)  Entonces
+			Escribir ("Ingrese un numero valido");
+			
+		SiNo
+			contador<-contador+1;
+			prom<-prom+num;
+			
+		Fin Si
+				
+	Fin Mientras
+	Escribir ("El promedio de los 5 números ingresados es: ") prom/5;
+	
+FinAlgoritmo

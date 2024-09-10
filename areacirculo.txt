@@ -1,0 +1,10 @@
+Algoritmo area_circulo
+	Definir radio_circ como Entero;
+	radio_circ<-0;
+	Definir area como Real;
+	area<-0;
+	Escribir ("ingrese el radio del circulo: ");
+	Leer radio_circ;
+	area<-(pi*radio_circ^2);
+	Escribir ("El area del circulo es: "), area;
+FinAlgoritmo

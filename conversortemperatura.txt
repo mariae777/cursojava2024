@@ -1,0 +1,15 @@
+Algoritmo conversor_temperatura
+	Definir temperatura_f Como Real;
+	temperatura_f<-0;
+	Definir temperatura_c Como Real;
+	temperatura_c<-0;
+	Escribir ("Ingrese la temperatura en grados Farenheit que quiere convertir a grados centigrados: ");
+	Leer temperatura_f;
+	Escribir temperatura_f;
+	temperatura_c<-((temperatura_f-32)*5/9);
+	variable<-expresion
+	Escribir ("la temperatura en grados centigrados es: ") temperatura_c;
+	
+	
+	
+FinAlgoritmo

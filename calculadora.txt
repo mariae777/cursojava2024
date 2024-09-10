@@ -1,0 +1,45 @@
+Algoritmo calculadora
+	definir num1 Como Real;
+	definir num2 Como Real;
+	definir resultado Como Real;
+	Definir operacion  como Entero;
+	
+	num1<-0;
+	num2<-0;
+	resultado<-0;
+	
+	Escribir ("Ingrese el primer numero: ");
+	Leer num1;
+	Escribir ("Ingrese el segundo numero ");
+	Leer num2;
+	Escribir ("Ingrese la opción que quiere realizar: 1. suma, 2. resta, 3. multiplicación, 4. división");
+	Leer operacion;
+	
+	
+	Segun operacion Hacer
+		1:
+			resultado = num1 + num2;
+			escribir ("la suma equivale a: " ) resultado;
+		2:
+			resultado = num1 - num2;
+			escribir ("La resta equivale a: ") resultado;
+		3:
+			resultado = num1*num2;
+			escribir ("la multiplicacion equivale a: ") resultado;
+		4: 
+					
+			Si [num2] <> 0 Entonces
+				resultado = num1/num2;
+				escribir ("la division equivale a: ") resultado;
+			SiNo
+				escribir ("la division por cero no es valida");
+			Fin Si
+			
+		De Otro Modo:
+			Escribir ("Ingrese una opcion Valida");
+	Fin Segun
+	
+	
+	
+	
+FinAlgoritmo
