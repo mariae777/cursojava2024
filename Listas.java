@@ -6,6 +6,7 @@ package com.mycompany.listas;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.HashMap;
 
 /**
  *
@@ -20,7 +21,10 @@ public class Listas {
         // el metodo main es el que va a ejcutar la tarea, entonces aqui es donde se llaman los metodos
         registrarAlumno(nombresAlumnos, "Juan");
         registrarAlumno(nombresAlumnos, "Maria");
+       // eliminarAlumno (nombresAlumnos, "Juan");
         System.out.println("Juan está registrado?" + buscarAlumno(nombresAlumnos, "Juan"));
+        eliminarAlumno (nombresAlumnos, "Juan");
+        System.out.println("Juan está registrado?"+ buscarAlumno(nombresAlumnos, "Juan") );
     }
     //métodos: son las operaciones Básicas, registrar alumnos, búsqueda y eliminación,
     //los métodos siempre van dentron de la clase que los requiere. 
