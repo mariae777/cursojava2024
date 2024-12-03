@@ -28,7 +28,8 @@ public class Creando_JDBC {
        // createForm1(productEntity2);
         productEntity.setPrice(5000);
         //update(productEntity);
-        delete("Vegetales");
+        //delete("Vegetales");
+        find();
         
     }
     
@@ -92,7 +93,7 @@ public class Creando_JDBC {
             System.out.println(e.getMessage());
         }
         } 
-   public List<ProductEntity> find(){
+   public static List<ProductEntity> find(){
         List<ProductEntity> productEntityList = new ArrayList<>();
         try{
             ConnectionDB connectionDB = new ConnectionDB();
@@ -102,7 +103,7 @@ public class Creando_JDBC {
             ResultSet resultSet = statement.executeQuery(sql);
             var meta= resultSet.getMetaData();
             var numeroColumns = meta.getColumnCount();
-            System.out.println("la cantidad de columnas numeroColumnas");
+            System.out.println("la cantidad de columnas es: "+  numeroColumns);
             while(resultSet.next()){
                 ProductEntity product = new ProductEntity();
                // product.setIdProduct(resultSet.getString("id_product"));
